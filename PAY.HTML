@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="swiper/css/swiper.min.css">
+    </head>
+    <body>
+       <header class="header">
+           <div class="logo">
+            <img src="png/cycle5 (2).png">
+           </div>
+           <nav class="navbar">
+               <a href="index.html">TRANG CHỦ</a>
+               <a href="buy.html">MOTOR</a>
+               <a href="#services">DỊCH VỤ</a>
+               <a href="new.html">NỔI BẬT</a>
+               <!-- <a href="#review">REVIEW</a> -->
+               <a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+           </nav>
+       </header>
+
+       <section id="page-header">
+        <h2>Bạn biết gì chưa</h2>
+        <p></p>
+
+       </section>
+
+       <section id="pay" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Xóa sản phẩm</td>
+                    <td>Hình ảnh</td>
+                    <td>Tên sản phẩm</td>
+                    <td>Giá</td>
+                    <td>Số lượng</td>
+                    <td>Thành tiền</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-times-circle"></i><a href="#"></a></td>
+                    <td><img src="r1/5-150.jpg" alt=""></td>
+                    <td>YAMAHA YZF R1</td>
+                    <td> $3000</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$3000</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-times-circle"></i><a href="#"></a></td>
+                    <td><img src="r1/1-208.jpg" alt=""></td>
+                    <td>YAMAHA YZF R1</td>
+                    <td> $3000</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$3000</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-times-circle"></i><a href="#"></a></td>
+                    <td><img src="r1/r1m.jpg" alt=""></td>
+                    <td>YAMAHA YZF R1</td>
+                    <td> $3000</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$3000</td>
+                </tr>
+            </tbody>
+        </table>
+       </section>
+
+       <section id="pay-add" class="section-p1">
+        <div id="phieu">
+            <h3>GIẢM GIÁ</h3>
+            <div>
+                <input type="text" placeholder="Nhập mã giảm giá">
+                <button class="normal">ÁP DỤNG</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>TỔNG ĐƠN</h3>
+            <table>
+                <tr>
+                    <td>TỔNG</td>
+                    <td>$9000</td>
+                </tr>
+                <tr>
+                    <td>Giao hàng</td>
+                    <td>MIỄN PHÍ</td>
+                </tr>
+                <tr>
+                    <td><strong>THÀNH TIỀN</strong></td>
+                    <td><strong>$9000</strong></td>
+                </tr>
+            </table>
+            <button class="normal">THANH TOÁN</button>
+        </div>
+       </section>
+
+       <section class="footer container-fluid">
+        <div class="box-container">
+            <div class="box">
+                <h3 style="font-family: 'Times New Roman', Times, serif;">CHINH SÁCH</h3>
+                <a href="#"><i class="fa fa-envelope"></i> CHÍNH SÁCH BẢO MẬT</a>
+                <a href="#"><i class="fa fa-envelope"></i> CHÍNH SÁCH VẬN CHUYỂN</a>
+                <a href="#"><i class="fa fa-envelope"></i> CHÍNH SÁCH ĐỔI TRẢ</a>
+                <a href="#"><i class="fa fa-envelope"></i> QUY ĐỊNH DỬ DỤNG</a>
+            </div>
+            <div class="box">
+                <h3>TRANG CHÍNH</h3>
+                <a href="index.html"><i class="fa fa-arrow-right"></i> TRANG CHỦ</a>
+                <a href="buy.html"><i class="fa fa-arrow-right"></i> MOTOR </a>
+                <a href="#"><i class="fa fa-arrow-right"></i> DỊCH VỤ</a>
+                <a href="#"><i class="fa fa-arrow-right"></i> NỔI BẬT </a>
+                <a href="#"><i class="fa fa-arrow-right"></i> REVIEW </a>
+            </div>
+            <div class="box">
+                <h3>HIÊN HỆ</h3>
+                <a href="#"><i class="fa fa-phone"></i> +0987654321 </a>
+                <a href="#"><i class="fa fa-phone"></i> +0123456789</a>
+                <a href="#"><i class="fa fa-envelope"></i> Cycleteam@gmail.com </a>
+                <a href="#"><i class="fa fa-arrow-right"></i> 123 Tân sơn, Gò vắp, TP.HCM</a>
+            </div>
+            <div class="box">
+                <h3>MẠNG XÃ HỘI</h3>
+                <a href="#"><i class="fa fa-facebook"></i> facebook </a>
+                <a href="#"><i class="fa fa-twitter"></i> twitter </a>
+                <a href="#"><i class="fa fa-instagram"></i> instgram </a>
+                <a href="#"><i class="fa fa-telegram"></i> telegram </a>
+                <a href="#"><i class="fa fa-linkedin"></i> linkedin </a>
+            </div>
+        </div>
+    </section>
+    </body>
+</html>
+<script src="swiper/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop:true,
+      centeredSlides:true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>

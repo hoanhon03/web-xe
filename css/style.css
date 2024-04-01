@@ -17,7 +17,7 @@
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 *{
-    font-family:iran_sans_light;
+    font-family:'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,7 +32,7 @@ html{
     scroll-behavior: smooth;
 }
 .header{
-    position: fixed;
+    text-align: center;
     top: 0;
     left: 0;
     right: 0;
@@ -41,58 +41,85 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 9%;
+    padding: 3rem 10%;
+
 }
 .header .logo{
-    font-size: 2.5rem;
-    color: orangered;
-    font-weight: bold;
+    font-size: 2em;
 }
 .header .logo span{
     color: #000;
 }
 .header .navbar a{
-    font-size: 1.7rem;
+    font-size: 2.5em;
     margin: 0 1rem;
     color: #000;
+    text-decoration:none;
 }
+/* 
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+} */
+
 .header .navbar a:hover{
     color: orangered;
+    text-decoration: underline;
 }
 
 section{
     padding: 2rem 2%;
 }
+.section-p1{
+    padding: 40px 80px;
+}
 .home{
-    padding-top: 10rem;
+    padding-top: 10em;
     text-align: center;
     overflow-x: hidden;
 }
 .home h1{
-    font-size: 6vw;
-    text-transform: uppercase;
+    top: auto;
+    font-size: 50px;
+    text-transform:uppercase;
     color: #000;
 }
 .home img{
     width: 100%;
-    margin-top: -250px;
+    margin-top: -150px;
 }
 .btn{
-    display: inline-block;
-    margin-top: 1rem;
-    border-radius: .5rem;
+    display:inline-block;
+    margin-top: 1em;
+    border-radius: .5em;
     background: yellowgreen;
     color: #000;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     cursor: pointer;
     padding: .8rem 3rem;
+    font-family: 'Times New Roman', Times, serif;
 }
+
 /* End Of Home  */
 .heading{
     text-align: center;
     padding-bottom: 2rem;
-    font-size: 4rem;
+    font-size: 30px;
     color: #000;
 }
 .heading span{
@@ -161,7 +188,7 @@ section{
     background: orangered !important;
     width: 15px !important;
     height: 15px !important;
-}
+} 
 .swiper-pagination-bullet-active{
     margin-top: -150px !important;
     background: blue !important;
@@ -260,7 +287,7 @@ section{
 
 /* End Of featured */
 .top{
-    margin-top: -100px;
+    margin-top: -300px;
 }
 .top .box-container{
     display: grid;
@@ -381,3 +408,431 @@ section{
 .footer .box-container .box a:hover i{
     padding-right: 2rem;
 }
+/* single product */
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+
+}
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .single-pro-details h6{
+    top: auto;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+    font-size: 20px;
+}
+.ALOLA{
+    display: block;
+    margin-top: -150px;
+    margin-left: auto;
+    
+}
+#prodetails .single-pro-details h3{
+    font-size: 20px;
+}
+
+#prodetails .single-pro-details h2{
+    padding: 40px 0 20px 0;
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    outline:auto;
+}
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: auto;
+}
+#prodetails .single-pro-details input:focus{
+    outline:#080808;
+}
+#prodetails .single-pro-details a{
+
+    display:inline-block;
+    margin-top: 1em;
+    border-radius: .5em;
+    background: yellowgreen;
+    color: #000;
+    font-weight: 500;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+    
+#prodetails .single-pro-details span{
+    line-height: 24px;
+    font-size: 20px;
+}
+/* end thông tin sản phẩm */
+
+.top1{
+    margin-top: 100px;
+}
+.top1 .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.top1 .box-container .box{
+    background: #fff;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+.top1 .box-container .box .image{
+    height: 35rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+.top1 .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+.top1 .box-container .box .content{
+    padding: 2rem;
+    padding-top: 0;
+}
+.top1 .box-container .box .content .stars{
+    padding-bottom: 1rem;
+}
+.top1 .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: orangered;
+}
+.top1 .box-container .box .content h3{
+    color: #000;
+    font-size: 2.5rem;
+}
+.top1 .box-container .box .content p{
+    color: rgb(61, 64, 68);
+    font-size: 1.6rem;
+    padding-bottom: .5rem 0;
+    line-height: 1.5;
+}
+.top1 .box-container .box .content .price{
+    color: orangered;
+    margin-left: 1rem;
+    font-size: 2.5rem;
+}
+/* tất cả sản phẩm */
+#page-header{
+    background-image: url(../img/bau_troi.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+
+}
+#page-header h2,
+#page-header p{
+    color: #fff;
+    font-size: 30px;
+}
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color:#088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 600;
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+}
+#product1 .pro{
+    width: 250px;
+    min-width: 200px;
+    padding: 30px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 9px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 20px 0;
+    transform: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro img{
+    width: 200px;
+    height: 200px;
+    border-radius: 9px;
+}
+#product1 .pro .des{
+    text-align: center;
+    padding: 10px 0;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+/* thanh toán */
+#pay table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#pay table img{
+ width: 70px;
+}
+#pay table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#pay table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#pay table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#pay table td:nth-child(4),
+#pay table td:nth-child(5),
+#pay table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+#pay table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+    outline: auto;
+}
+#pay table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+#pay table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+#pay table tbody tr td{
+    padding-top: 15px;
+
+}
+#pay table tbody td{
+    font-size: 13px;
+}
+
+#pay-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#phieu{
+    width: 50%;
+    margin-bottom: 30px;
+}
+#phieu h3,
+#subtotal h3{
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+#phieu input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+#phieu button,
+#subtotal button{
+    display:inline-block;
+    margin-top: 1em;
+    border-radius: .5em;
+    background: #088178;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+
+}
+/* bảng tin */
+#page-header.blog-header{
+    background-image:url(../blog/01bn.jpg);
+   
+}
+#page-header.blog-header h2,
+#page-header.blog-header p{
+    color: #000;
+}
+#blog{
+    padding: 150px 150px 0 150px;
+}
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 80px;
+}
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+#blog img{
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+}
+#blog .blog-details{
+    padding: 20px;
+    width: 50%;
+    font-size: medium;
+
+}
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+#blog .blog-details a::after{
+    content:"";
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+}
+#blog .blog-details a:hover{
+    color: #088178;
+}
+#blog .blog-details a:hover::after{
+    background-color: #088178;
+}
+#blog .blog-box h1{
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700px;
+    color: #041402;
+}
+
+/* mobi */
+/* @media (max-width: 799px) {
+    .header .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: fixed;
+        top:0;
+        right: 0px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding: 20px;
+    }
+} */
+/* lỗi không chạy được trên mobi */
